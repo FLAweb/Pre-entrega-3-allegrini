@@ -286,6 +286,9 @@ main .cards .cards__four p {
   margin: 40px 0;
 }
 
+.mainJuridico {
+  min-height: 100vh;
+}
 .mainJuridico .title {
   font-family: Poppins;
   text-align: center;
@@ -300,11 +303,14 @@ main .cards .cards__four p {
   text-align: center;
   background: rgba(219, 218, 218, 0.685);
   margin: 40px 0;
-  background-image: url(../../assets/img/charlando-3.jpg);
+  background-image: url(../assets/img/charlando-3.jpg);
   background-size: cover;
   margin: 70px 30px;
 }
 
+.mainImpositivo {
+  min-height: 100vh;
+}
 .mainImpositivo .title {
   font-family: Poppins;
   text-align: center;
@@ -319,12 +325,15 @@ main .cards .cards__four p {
   text-align: center;
   background: rgba(219, 218, 218, 0.685);
   margin: 40px 0;
-  background-image: url(../../assets/img/meeting.png);
+  background-image: url(../assets/img/meeting.png);
   background-size: cover;
   margin: 130px 30px;
   padding: 10px 50px;
 }
 
+.mainContactanos {
+  min-height: 100vh;
+}
 .mainContactanos .title {
   font-family: Poppins;
   text-align: center;
