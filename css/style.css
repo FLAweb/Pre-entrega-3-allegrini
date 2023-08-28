@@ -18,7 +18,7 @@
 .header .header__logo {
   width: 220px;
   height: auto;
-  margin-left: 10vw;
+  margin-left: 1vw;
 }
 .header .header__logo img {
   width: 100%;
@@ -40,17 +40,58 @@
   font-size: 1.2rem;
   font-family: Poppins;
 }
-.header .header__nav--mobil ul {
-  display: flex;
-  flex-direction: column;
+.header .header__nav--mobil {
+  z-index: 100;
 }
-.header .header__nav--mobil ul li {
+.header .header__nav--mobil .checkbox, .header .header__nav--mobil .icons {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
+}
+.header .header__nav--mobil .checkbox {
+  opacity: 0;
+}
+.header .header__nav--mobil .icons {
+  pointer-events: none;
+}
+.header .header__nav--mobil .icons img {
+  width: 30px;
+}
+.header .header__nav--mobil .icoX {
+  display: none;
+}
+.header .header__nav--mobil .checkbox:checked ~ .icoH {
+  display: none;
+}
+.header .header__nav--mobil .checkbox:checked ~ .icoX {
+  display: block;
+}
+.header .header__nav--mobil .checkbox:checked ~ .menu {
+  right: 0px;
+}
+.header .header__nav--mobil .menu {
+  width: 300px;
+  position: absolute;
+  right: -300px;
+  top: 70px;
+  transition: 250ms;
+  background: rgba(216, 216, 216, 0.8);
+}
+.header .header__nav--mobil .menu li {
   font-family: Poppins;
+  font-size: 1.2rem;
   list-style-type: none;
+  padding: 10px;
 }
-.header .header__nav--mobil ul li a {
+.header .header__nav--mobil .menu li a {
   text-decoration: none;
   color: rgb(82, 84, 190);
+}
+.header .header__nav--mobil .menu li:hover {
+  background-color: rgb(155, 155, 155);
 }
 
 @media (max-width: 1400px) {
@@ -58,7 +99,7 @@
     display: none;
   }
   .header {
-    height: 200px;
+    height: 70px;
   }
 }
 @media (min-width: 1401px) {
