@@ -76,6 +76,7 @@ body {
 }
 .header .header__nav--mobil .checkbox:checked ~ .menu {
   right: 0px;
+  display: block;
 }
 .header .header__nav--mobil .menu {
   width: 310px;
@@ -84,6 +85,7 @@ body {
   top: 70px;
   transition: 250ms;
   background: rgba(216, 216, 216, 0.8);
+  display: none;
 }
 .header .header__nav--mobil .menu li {
   font-family: Poppins;

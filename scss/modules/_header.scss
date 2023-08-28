@@ -69,6 +69,7 @@ body {
             }
             .checkbox:checked ~ .menu {
                 right: 0px;
+                display: block;
             }
             .menu {
                 width: 310px;
@@ -77,6 +78,7 @@ body {
                 top: 70px;
                 transition: 250ms;
                 background: rgba(216, 216, 216, 0.8);
+                display: none;
               li {
                 font-family: Poppins; 
                 font-size: 1.2rem;
