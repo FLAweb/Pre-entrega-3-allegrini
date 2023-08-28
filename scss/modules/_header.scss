@@ -1,3 +1,6 @@
+body {
+    overflow-x: hidden;
+}
 .header {
     display: flex;
     justify-content: space-between;
@@ -7,10 +10,11 @@
     border-bottom: $border;
     box-shadow: $box-shadow;
     background: $bg-transparente;
+    overflow: hidden;
         .header__logo {
             width: 220px;
             height: auto;
-            margin-left: 1vw;
+            margin-left: 5vw;
                 img {
                     width: 100%;
                 }
@@ -67,13 +71,12 @@
                 right: 0px;
             }
             .menu {
-                width: 300px;
+                width: 310px;
                 position: absolute;
-                right: -300px;
+                right: -310px;
                 top: 70px;
                 transition: 250ms;
                 background: rgba(216, 216, 216, 0.8);
-                
               li {
                 font-family: Poppins; 
                 font-size: 1.2rem;
@@ -98,8 +101,11 @@
   
     .header {
         height: 70px;
-    }
+        .header__logo {
+            margin-left: -5vw;
+        }
   }
+}
 
   @media (min-width: 1401px) {
     .header__nav--mobil {
